@@ -1,4 +1,4 @@
-package model
+package view
 
 class NewGame {
     init {

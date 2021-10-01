@@ -1,4 +1,4 @@
-import model.MainMenu
+import view.MainMenu
 
 fun main() {
     MainMenu()
