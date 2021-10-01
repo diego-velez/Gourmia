@@ -11,5 +11,7 @@ class NewGame {
         Player(playerName).let { player ->
             GameRepository.initialize(player)
         }
+
+        GameCycle()
     }
 }
