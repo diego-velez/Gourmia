@@ -1,3 +1,3 @@
 # Gourmia
 
-A Kotlin program that tracks your passwords
+A game written in Kotlin/JVM
