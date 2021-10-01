@@ -4,17 +4,22 @@ class MainMenu {
     init {
         var choice: Int? = null
 
-        while (choice != 3) {
+        while (choice != 2) {
             println("Welcome to Gourmia!")
             println("1) New Game")
-            println("2) Continue")
-            println("3) Exit")
+            println("2) Exit")
 
-            choice = readLine()?.toInt()
+            try {
+                choice = readLine()?.toInt()
+            } catch (error: NumberFormatException) {}
 
             when (choice) {
-                1 -> TODO()
-                2 -> TODO()
+                1 -> {
+                    NewGame()
+
+                    // Make sure it doesn't keep looping the main menu
+                    choice = 2
+                }
             }
         }
     }
